@@ -1,5 +1,6 @@
 import { StyleSheet, View } from "react-native";
 import StartGameScreen from "../screens/StartGameScreen";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function Index() {
   return (
