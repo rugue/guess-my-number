@@ -4,9 +4,9 @@ import { LinearGradient } from "expo-linear-gradient";
 
 export default function Index() {
   return (
-    <View style={styles.rootScreen}>
+    <LinearGradient colors={["#4e0329", "#ddb52f"]} style={styles.rootScreen}>
       <StartGameScreen />
-    </View>
+    </LinearGradient>
   );
 }
 
