@@ -38,7 +38,7 @@ function StartGameScreen() {
         keyboardType="number-pad"
         autoCapitalize="none"
         autoCorrect={false}
-        onChang={numberInputHandler} //2
+        onChangeText={numberInputHandler} //2
         value={enteredNumber} //1
       />
       <View style={styles.buttonsContainer}>
