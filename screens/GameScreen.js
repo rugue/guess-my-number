@@ -4,9 +4,7 @@ import Title from "../components/Title";
 function GameScreen() {
   return (
     <View style={styles.screen}>
-      <Text>
-        <Title />
-      </Text>
+      <Title>Opponent's Guess</Title>
       {/* {GUESS} */}
       <View>
         <Text>Higher or Lower?</Text>
