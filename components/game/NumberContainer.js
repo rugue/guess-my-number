@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 import { Colors } from "../../constants/Colors.ts";
 
-function NumberContainer({ Children }) {
+function NumberContainer({ children }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.numberText}>{Children}</Text>
+      <Text style={styles.numberText}>{children}</Text>
     </View>
   );
 }
