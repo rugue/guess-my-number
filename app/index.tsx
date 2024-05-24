@@ -15,7 +15,7 @@ export default function Index() {
   let screen = <StartGameScreen onPickNumber={pickedNumberHandler} />;
 
   if (userNumber) {
-    screen = <GameScreen />;
+    screen = <GameScreen userNumber />;
   }
 
   return (
