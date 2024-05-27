@@ -5,10 +5,25 @@ import GameScreen from "../screens/GameScreen";
 import GameOverScreen from "../screens/GameOverScreen";
 import { LinearGradient } from "expo-linear-gradient";
 import { Colors } from "../constants/Colors";
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
+// // import AppLoading from "expo-app-loading";
+
+// // Keep the splash screen visible while we fetch resources
+// SplashScreen.preventAutoHideAsync();
 
 export default function Index() {
   const [userNumber, setUserNumber] = useState<number | undefined>(undefined);
   const [gameIsOver, setGameIsOver] = useState(true);
+
+  const [fontsLoaded] = useFonts({
+    "open-sans": require("../assets/fonts/OpenSans-Regular.ttf"),
+    "open-sans-bold": require("../assets/fonts/OpenSans-Bold.ttf"),
+  });
+
+  // if (!fontsLoaded) {
+  //   return <AppLoading />;
+  // }
 
   function pickedNumberHandler(pickedNumber: number) {
     setUserNumber(pickedNumber);
