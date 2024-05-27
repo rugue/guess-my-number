@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { StyleSheet, ImageBackground, SafeAreaView } from "react-native";
 import StartGameScreen from "../screens/StartGameScreen";
 import GameScreen from "../screens/GameScreen";
@@ -31,8 +31,9 @@ export default function Index() {
     setGameIsOver(false);
   }
 
-  function gameOverHandler() {
+  function gameOverHandler(numberOfRounds: SetStateAction<number>) {
     setGameIsOver(true);
+    setGuessRounds(numberOfRounds);
   }
 
   function startNewGameHandler() {
